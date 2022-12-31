@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <p>By, Soumya Sethi.</p>
+    <div class="calc">
+        <!-- <button class="equation" id="equation"></button> -->
+        <input name="" class="equation" id="result" type="text" name="ans">
+        <div>
+            <div>
+                <button class="diff" onclick="erase()">AC</button>
+                <button class="diff" onclick="back()"><i class='bx bx-arrow-back'></i></button>
+                <button onclick="print('%')" class="diff">%</button>
+                <button onclick="print('/')" class="diff">/</button>
+            </div>
+            <div>
+                <button onclick="print('7')">7</button>
+                <button onclick="print('8')">8</button>
+                <button onclick="print('9')">9</button>
+                <button onclick="print('*')" class="diff">*</button>
+            </div>
+            <div>
+                <button onclick="print('4')">4</button>
+                <button onclick="print('5')">5</button>
+                <button onclick="print('6')">6</button>
+                <button onclick="print('-')" class="diff">-</button>
+            </div>
+            <div>
+                <button onclick="print('1')">1</button>
+                <button onclick="print('2')">2</button>
+                <button onclick="print('3')">3</button>
+                <button onclick="print('+')" class="diff">+</button>
+            </div>
+            <div>
+                <button onclick="print('(')">(</button>
+                <button onclick="print('0')">0</button>
+                <button onclick="print(')')">)</button>
+                <button class="equal" onclick="solve()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
